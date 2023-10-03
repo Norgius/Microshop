@@ -25,6 +25,7 @@ wheels/
 share/python-wheels/
 *.egg-info/
 .vscode/
+.flake8
 .installed.cfg
 .editorconfig
 *.egg
