@@ -1,3 +1,5 @@
+# Пока что не использую эту реализацию
+
 from typing import TYPE_CHECKING
 
 from sqlalchemy import ForeignKey
