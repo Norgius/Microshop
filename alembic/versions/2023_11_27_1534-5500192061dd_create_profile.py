@@ -1,8 +1,8 @@
-"""Create profile table
+"""Create profile
 
-Revision ID: b4628e03e91c
+Revision ID: 5500192061dd
 Revises: 68d634d95c25
-Create Date: 2023-10-05 16:18:01.551978
+Create Date: 2023-11-27 15:34:23.379388
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'b4628e03e91c'
+revision: str = '5500192061dd'
 down_revision: Union[str, None] = '68d634d95c25'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -31,7 +31,8 @@ def upgrade() -> None:
             ['user_id'],
             ['users.id'],
         ),
-        sa.PrimaryKeyConstraint('id')
+        sa.PrimaryKeyConstraint('id'),
+        sa.UniqueConstraint('user_id')
     )
     # ### end Alembic commands ###
 
