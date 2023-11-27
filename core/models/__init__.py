@@ -1,4 +1,4 @@
-__all__ = {
+__all__ = (
     "Base",
     "User",
     "Post",
@@ -6,8 +6,7 @@ __all__ = {
     "Product",
     "DataBaseHelper",
     "db_helper",
-}
-
+)
 
 from .base import Base
 from .product import Product
